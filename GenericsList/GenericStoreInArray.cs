@@ -117,7 +117,7 @@ namespace GenericsList
             string temporaryString = "";
             for (int i = 0; i < genericArray.Length; i++)
             {
-                temporaryString = temporaryString + Convert.ToString(genericArray[i]);
+                temporaryString = temporaryString + " " + genericArray[i];
             }
             return temporaryString;
         }
