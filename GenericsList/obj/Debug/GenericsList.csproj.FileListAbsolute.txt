@@ -1,0 +1,6 @@
+C:\Users\Kristofer\Desktop\devCodeCamp\C#\GenericsList\GenericsList\bin\Debug\GenericsList.exe.config
+C:\Users\Kristofer\Desktop\devCodeCamp\C#\GenericsList\GenericsList\bin\Debug\GenericsList.exe
+C:\Users\Kristofer\Desktop\devCodeCamp\C#\GenericsList\GenericsList\bin\Debug\GenericsList.pdb
+C:\Users\Kristofer\Desktop\devCodeCamp\C#\GenericsList\GenericsList\obj\Debug\GenericsList.csprojResolveAssemblyReference.cache
+C:\Users\Kristofer\Desktop\devCodeCamp\C#\GenericsList\GenericsList\obj\Debug\GenericsList.exe
+C:\Users\Kristofer\Desktop\devCodeCamp\C#\GenericsList\GenericsList\obj\Debug\GenericsList.pdb
