@@ -183,18 +183,18 @@ namespace GenericsList
         public void Sort()
         {
             T temp;
-            for (int i = 0; i < genericArray.Length; i++)
-            {
-                for (int p = 0; p < genericArray.Length; p++)
+                for (int i = 0; i < genericArray.Length; i++)
                 {
-                    if (genericArray[i].GetHashCode() < genericArray[p].GetHashCode())
+                    for (int p = 0; p < genericArray.Length; p++)
                     {
-                        temp = genericArray[i];
-                        genericArray[i] = genericArray[p];
-                        genericArray[p] = temp;
+                        if (Comparer.Default.Compare(genericArray[i], genericArray[p]) < 0)
+                        {
+                            temp = genericArray[i];
+                            genericArray[i] = genericArray[p];
+                            genericArray[p] = temp;
+                        }
                     }
                 }
-            }
         }
         public void HappyNumbers()
         {
@@ -258,9 +258,20 @@ namespace GenericsList
             throw new NotImplementedException();
         }
 
-        public int CompareTo(T other)
+        public bool CompareTo(T item1, T item2)
         {
-            throw new NotImplementedException();
+            int thing1;
+            int.TryParse(item1.ToString(), out thing1);
+            int thing2;
+            int.TryParse(item2.ToString(), out thing2);
+            if  (thing1 < thing2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         IEnumerator<T> IEnumerable<T>.GetEnumerator()

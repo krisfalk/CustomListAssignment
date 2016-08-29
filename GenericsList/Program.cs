@@ -74,6 +74,19 @@ namespace GenericsList
             result.Print();
             Console.ReadLine();
 
+            GenericStoreInArray<string> string1 = new GenericStoreInArray<string>(0) { "Lion", "Zebra", "Dog", "Cat" };
+            GenericStoreInArray<string> string2 = new GenericStoreInArray<string>(0) { "Laugh", "Scream", "Yell", "Sneeze" };
+            GenericStoreInArray<string> string4 = new GenericStoreInArray<string>(0) { "Stamp", "Silly", "Suzy", "Swat" };
+            GenericStoreInArray<string> string3 = new GenericStoreInArray<string>(0) { "NOSE", "XYLOPHONE", "POTATO", "YAWN", "QUIL", "RABBIT", "SNAIL",
+                "TURTLE", "UMBRELLA", "VOLE", "WOLF", "ZEBRA", "ANIMAL", "BEAVER", "COW", "DOG", "ELEPHANT",
+                "FARM", "GARY", "HOWARD", "ISREAL", "JIMMY", "KOHLS", "LEMON", "MANDARIN" };
+
+            string3.Print();
+            Console.ReadLine();
+            string3.Sort();
+            string3.Print();
+            Console.ReadLine();
+
             result = result - genericTestInt2;
             result.Print();
             Console.ReadLine();
